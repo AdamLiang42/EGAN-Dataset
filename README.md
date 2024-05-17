@@ -14,7 +14,12 @@ With this clustering in place, the ERGAN framework was tasked to train 10 separa
 ![10 cluster overview](./cluster_overview.png)
 <p align="center">Fig.1: Overview of Synthetic Load Patterns and Clustering Centers Across 10 Distinct Clusters</p>
 
-The above Fig.1 is the visual representation of these clusters emphasizes the varied load patterns, with each cluster capturing distinct consumption trends. This segmentation underscores the importance of individual generative models for each cluster to capture the intricate nuances of electricity consumption.
+Fig.1 is the visual representation of these clusters emphasizes the varied load patterns, with each cluster capturing distinct consumption trends. This segmentation underscores the importance of individual generative models for each cluster to capture the intricate nuances of electricity consumption.
+
+![ERGAN](./ERGAN.png)
+<p align="center">Fig. 2: ERGAN Framework for Synthetic Residential Load Pattern Generation</p>
+
+Fig. 2 illustrates the ERGAN framework, detailing the process from residential load pattern input to the generation of clustered synthetic load patterns. The workflow includes clustering number selection via the Davies-Bouldin score, performing K-Means clustering, and training Bi-LSTM networks for both generator and discriminator components to differentiate between real and synthetic patterns.
 
 ## Dataset Location
 The dataset is located under the following directory: [ergan_dataset](https://github.com/AdamLiang42/ERGAN-Dataset/tree/main/ergan_dataset).
