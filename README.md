@@ -34,6 +34,8 @@ We evaluated different numbers of clusters and found that 10 clusters provided t
 
 ### Generation Framework
 Once the clusters were defined, we used the Ensemble Recurrent Generative Adversarial Network (ERGAN) Framework to generate the synthetic load patterns. Each cluster was used to train a separate generative model within the ERGAN framework. The final dataset combines the outputs of these 10 models, maintaining the original proportions of each cluster. 
+![Generation Framework](./ERGAN.png)
+<p align="center"><b>Fig. 2</b>: ERGAN Framework for Synthetic Residential Load Pattern Generation</p>
 
 ## Visualization of Cluster Data
 
@@ -42,10 +44,6 @@ The synthetic load patterns are visualized in the context of the 10 clusters, hi
 
 ![10 cluster overview](./cluster_overview.png)
 <p align="center"><b>Fig. 3</b>: Overview of Synthetic Load Patterns and Clustering Centers Across 10 Distinct Clusters</p>
-
-
-![Generation Framework](./ERGAN.png)
-<p align="center"><b>Fig. 2</b>: ERGAN Framework for Synthetic Residential Load Pattern Generation</p>
 
 ## Comparison of Original and Synthetic Data
 
